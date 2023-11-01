@@ -1,0 +1,599 @@
+:root{
+  scroll-behavior: smooth;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+.site-footer .site-header{
+  position: fixed;
+  z-index: 10;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: .75em 0 .25em;
+  margin-bottom: 0.25em;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1024px){
+  .slide_fx {
+    top: auto!important;
+    width: 96%!important;
+    background-color: rgba(255,255,255,0.8);
+  }
+  
+  #block, #post-d {
+    width: 97%!important;
+  }
+  .info_img {
+    width: 100%!important;
+    height: 350px;
+  }
+  .ref2{
+    width:100%!important;
+  }
+  .decouvrir{
+    margin-top: 800px;
+    color:black;
+  }
+  .border{
+    border: none !important;
+  }
+  .flex_1_img, .flex_2_img {
+    width: 100%!important;
+    height: 350px;
+  }
+  .flex_1_txt, .flex_2_txt {
+    width: 90%!important;
+  }
+  .chiffre_nbr_ct {
+    width: 100%!important;
+    margin-bottom: 20px;
+  }
+  .slide-2 {
+    display: none;
+    background-size: cover;
+    background-repeat: no-repeat !important;
+  }
+  .slide_nfo_ct {
+    width: 96%!important;
+    margin-top: 10px!important;
+  }
+  .containerParralax {
+    padding: 150px 0 !important;
+    background-color: rgba(21,21,21,0.0) !important;
+  }
+}
+@media screen and (max-width: 1400px){
+  .slide_fx {
+    width: 33%;
+  }
+  .border{
+    border: none !important;
+  }
+}
+
+/*slider*/
+
+.slide_fx {
+  position: relative;
+  left: 0;
+  width: 23%;
+  background-color: rgba(71,82,88,0.5);
+  bottom: 0;
+  top: 0;
+  padding: 0 2%;
+  margin-top: -1490px;
+  margin-bottom: 150px;
+  height: 1490px;
+  
+}
+
+.decouvrir{
+  margin-top: 450px;
+  color:white;
+  
+}
+
+.bt_slide{
+  color: #FFF;
+  background-color: #000;
+  border-radius: 25px;
+  font-size: 11px;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  line-height: 2em;
+  letter-spacing: .2em;
+  font-weight: 600;
+  width: 200px;
+  margin: 30px 0;
+}
+
+.slider {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding: 8em 1em 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: left 0s 0.75s;
+}
+[id^="slide"]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left 0.65s ease-out;
+}
+.slide-1 {
+  background-image: url('http://194.146.225.243/plesk-site-preview/www.praxis-immobilier.com/https/194.146.225.243/wp-content/uploads/2022/03/Sans-titre-2.jpg');
+}
+.slide-2 {
+  background-image: url("./img/41A2763.jpg");
+}
+.slide-3 {
+  background-image: url("./img/AcanaPraxis-GEN-v6.jpg");
+}
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+  }
+  
+  body { margin: 0; } 
+  div#slider { overflow: hidden; }
+  div#slider figure img { width: 20%; float: left; }
+  div#slider figure { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite; 
+  }
+
+/*class*/
+.d--b{
+  display: block;
+}
+.d--f{
+  display:flex;
+}
+.f--w{
+  flex-wrap:wrap;
+}
+.f--col{
+  flex-direction:column
+}
+.w--100{
+  width:100%;
+}
+.radius{
+  border-radius: 2px;
+}
+.shadow:hover{
+  box-shadow:1px 1px 12px #555;
+}
+.t--c{
+  text-align: center;
+}
+.a--c{
+  align-items: center;
+}
+.o--h{
+  overflow: hidden;
+}
+.j--c{
+  justify-content: center;
+}
+.color-w{
+  color:white;
+}
+
+/*pseudo élément*/
+
+.clear-block::after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/*a propos*/
+a{
+  text-decoration: none;
+}
+l--n{
+  list-style: none;
+}
+
+
+.savoir{
+  position: absolute;
+  bottom: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0 2%;
+  color: #212121;
+}
+
+.img_post{
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+}
+
+.fx_h2_top{
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid #ec7404;
+  border-left: 1px solid #ec7404;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fw_h2_btt{
+  width: 20px;
+  height: 20px;
+  border-bottom: 1px solid #ec7404;
+  border-right: 1px solid #ec7404;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/*operation*/
+
+#block{
+  width: 30%;
+  margin: 1.5%;
+  float: left;
+  padding-bottom: 30px;
+  position: relative;
+  transition: all 1s;
+
+}
+
+#block h2{
+  width: 96%;
+  text-transform: uppercase !important;
+  padding: 10px 2% 1px 2%;
+  text-align: left;
+  font-size: 22px;
+  line-height: 1.5em;
+  letter-spacing: .05em;
+  font-family: Raleway,sans-serif;
+  color: #212121;
+  font-weight: 300;
+  margin-bottom: 0!important;
+}
+
+p {
+  margin: .25em 0 .75em 0;
+  line-height: 150%;
+}
+
+.description {
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #212121;
+}
+.lieu {
+  width: 96%;
+  text-transform: uppercase !important;
+  padding: 0px 2%;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: .05em;
+  font-family: Raleway,sans-serif;
+  color: #ec7404;
+  
+}
+.img_block{
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+
+.operation{
+  width: 92%;
+  margin: auto;
+  padding: 80px O;
+}
+.post{
+  width: 100%;
+  padding: 50px 0;
+}
+.operation h2, .ref h2{
+  font-size: 1.7em;
+  line-height: 1.314em;
+  letter-spacing: .05em;
+  font-family: Raleway,sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  margin: auto;
+  padding: 40px 0;
+  font-weight: 100;
+  max-width: 800px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  margin: 0px;
+  padding-left: 10px;
+}
+
+#post{
+  padding: 50px 0;
+}
+
+.info{
+  width: 90%;
+  padding: 80px 0;
+  margin: auto;
+}
+
+.infos{
+  margin: 100px 0;
+  padding: 5%;
+}
+.info_img {
+  background-image: url("./img/20130531_161057.jpg");
+  width: 50%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.border{
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+}
+
+.bt_info{
+  color: #FFF;
+  background-color: #000;
+  border-radius: 30px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+}
+
+.mt--30{
+  margin-top: 30px;
+}
+
+#post-d{
+  width: 100%;
+  height: 350px;
+  min-height: 140px;
+}
+
+
+.ref{
+  width:92%;
+  padding: 100px 0;
+  margin: auto;
+}
+.ref2{
+  width: 30%;
+  margin: 1.5%;
+  background-size: cover;
+  background-position: center;
+}
+.ref h3 {
+  font-weight: 100;
+}
+
+.ref h4 {
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 40px 0;
+  letter-spacing: 1.6px;
+}
+h4 {
+  font-size: 140%;
+}
+
+/*Flex1-Flex2*/
+
+.flex_1_img, .flex_2_img {
+  width: 50%;
+  background-size: cover;
+  background-position: center center;
+}
+.flex_1_txt, .flex_2_txt {
+  width: 40%;
+  padding: 5%;
+  background-image: url(http://194.146.225.243/plesk-site-preview/www.praxis-immobilier.com/https/194.146.225.243/fond_rond.jpg);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.flex_1_txt p {
+  padding: 30px 0;
+}
+.rond {
+  background-color: #000;
+  color: #FFF;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 35px;
+  margin-top: 30px;
+  text-align: center;
+  line-height: 45px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.flex_2_txt div {
+  width: 40%;
+  margin: 2.5%;
+  padding: 2.5%;
+  background-color: #FFF;
+  font-size: 15px;
+  font-weight: 300;
+}
+.flex_1 h2, .flex_2 h2 {
+  font-size: 30px;
+  line-height: 1.4em;
+  letter-spacing: .05em;
+  font-family: Raleway,sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+}
+.flex_2_txt h3 {
+  text-transform: uppercase !important;
+  text-align: left;
+  font-size: 22px;
+  line-height: 1.5em;
+  letter-spacing: .05em;
+  font-family: Raleway,sans-serif;
+  color: #212121;
+  font-weight: 300;
+  padding: 0;
+}
+
+
+/*nbr*/
+
+.ptb--130{
+  padding: 130px 0;
+}
+.chiffre_nbr_ct {
+  width: 20%;
+  text-align: center;
+}
+.nbr {
+  font-size: 56px;
+  font-weight: 500;
+}
+.nfo {
+  font-size: 32px;
+}
+.w--20{
+  width: 20%;
+}
+
+
+/*slide de fin*/ 
+
+#slide-2{
+  background-image: url(./img/slide_bas.jpg);
+  
+}
+.center_sl{
+  background-position: center -643px;
+}
+
+.containerParralax {
+  width: 100%;
+  height: 450px;
+}
+
+.slide_nfo{
+  width: 92%;
+  padding-bottom: 150px;
+  margin:auto;
+}
+.slide_nfo_ct {
+  width: 29%;
+  padding: 2% 1%;
+  padding-bottom: 2%;
+  margin: 1%;
+  margin-top: 1%;
+  background-color: #FFF;
+  box-shadow: 1px 1px 12px rgba(0,0,0,0.2);
+  position: relative;
+  padding-bottom: 50px;
+  text-align: center;
+  margin-top: -120px;
+}
+
+/* IMAGE*/
+
+#breserve{
+  background-image:url(http://194.146.225.243/plesk-site-preview/www.praxis-immobilier.com/https/194.146.225.243/wp-content/uploads/2022/03/LaReserve-2021-PersCoeurIlot-MASTER.jpg);
+}
+
+#bscenev{
+  background-image:url(http://194.146.225.243/plesk-site-preview/www.praxis-immobilier.com/https/194.146.225.243/wp-content/uploads/2022/03/scene-victoire.png);
+}
+
+#bgardenia{
+  background-image:url(http://194.146.225.243/plesk-site-preview/www.praxis-immobilier.com/https/194.146.225.243/wp-content/uploads/2022/03/gardiena.png);
+}
+#chevert{
+  background-image: url(./img/chevert.jpg);
+}
+#grange{
+  background-image: url(./img/gbateliere.jpg);
+}
+#thann{
+  background-image: url(./img/THANN.jpg);
+}
+#aboukir{
+  background-image: url(./img/aboukir.jpg);
+}
+#vasco{
+  background-image: url(./img/IMAGE3.jpg);
+}
+#citta{
+  background-image: url(./img/LaCitta-Gen1-MASTER-bonne-def.jpg);
+}
+#villas{
+  background-image: url(./img/crete-22-2048x1144.jpg);
+}
+#citadelle{
+  background-image: url(./img/cita.jpg);
+}
+#europe{
+  background-image: url(./img/europe.jpg);
+}
+#img_ref1{
+  background-image: url(./img/41A2763.jpg);
+}
+#img_ref2{
+  background-image: url(./img/LaReserve-TerrasseNuit-MASTER-1.jpg);
+}
